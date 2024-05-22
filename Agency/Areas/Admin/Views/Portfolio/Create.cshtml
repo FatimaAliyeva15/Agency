@@ -1,0 +1,27 @@
+﻿@using Agency_Core.Models;
+@model Portfolio
+
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class="mb-3 col-md-3">
+                <label asp-for="Title" class="form-label">Title</label>
+                <input asp-for="Title" class="form-control" >
+                <span asp-validation-for="Title" style="color:red"></span>
+            </div>
+            <div class="mb-3 col-md-3">
+                <label asp-for="Subtitle" class="form-label">Subtitle</label>
+                <input asp-for="Subtitle" class="form-control">
+                <span asp-validation-for="Subtitle" style="color:red"></span>
+            </div>
+            <div class="mb-3 col-md-3">
+                <label asp-for="ImgFile" class="form-label">ImgFile</label>
+                <input asp-for="ImgFile" class="form-control">
+                <span asp-validation-for="ImgFile" style="color:red"></span>
+            </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+</div>
